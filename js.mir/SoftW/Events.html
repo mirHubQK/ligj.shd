@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p ondblclick="klik(this)" onclick="klik2(this)">Klik me</p>
+    <script>
+        function klik(i){
+            i.innerHTML="Ndrum";
+        }
+        function klik2(d){
+            d.innerHTML="Klik";
+        }
+    </script>
+
+
+<p id="p2">Shkolla Digjitale</p>
+<button onclick="Hide(document.getElementById('p2'))">Hide</button>
+<button onclick="Show(document.getElementById('p2'))">Show</button>
+
+<script>
+    function Hide(i){
+        i.style.visibility="hidden";
+    }
+    function Show(d){
+        d.style.visibility="visible";
+    }
+</script>
+
+<h1 onmouseover="over(this)" onmouseout="out(this)">Mouse out</h1>
+
+<script>
+ function over(i){
+        i.innerHTML="Mouse Over";
+        i.style.color="red";
+    }
+    function out(d){
+        d.innerHTML="Mouse Out";
+        d.style.color="black";
+    }
+</script>
+
+<h1 onmousedown="down(this)" onmouseup="up(this)">Shtypee</h1>
+
+<script>
+ function down(w){
+        w.innerHTML="Leshoje";
+        w.style.background="red";
+        w.style.width="200px";
+    }
+    function up(d){
+        d.innerHTML="Shtype";
+        d.style.background="white";
+        d.style.width="100%";
+    }
+</script>
+
+
+<input type="text" type="number" id="inp1" onfocus="input(this)" onblur="input2(this)">
+<script>
+    function input(s){
+        s.style.background="red";
+        s.style.color="blue";
+        s.style.fontSize="32px";
+    }
+    function input2(s){
+        s.style.background="white";
+        s.style.color="black";
+        s.style.fontSize="16px";
+    }
+</script>
+<br>
+<br>
+
+<select id="c1" onchange="select()">
+    <option disabled="dis">Zgjedh</option>
+    <option value="Audi">Audi</option>
+    <option value="BMW">BMW</option>
+    <option value="Volvo">Volvo</option>
+    <option value="Mercedes">Mercedes</option>
+</select>
+
+<p id="p4"></p>
+
+<script>
+    function select(){
+        var x = document.getElementById('c1').value;
+        document.getElementById('p4').innerHTML="You Selected: " + x;
+    }
+</script>
+
+<input type="text"id="Input2" oninput="text()">
+<p id="para"></p>
+<script>
+    function text(){
+        var x= document.getElementById("Input2").value;
+        document.getElementById('para').innerHTML=x;
+    }
+</script>
+
+</body>
+</html>

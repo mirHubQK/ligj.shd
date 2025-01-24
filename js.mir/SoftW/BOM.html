@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"></p>
+    
+    <script>
+        document.getElementById('p1').innerHTML=
+        "Browser inner window width:"+window.innerWidth+"px<br>"+
+        "Browser inner window height:"+window.innerHeight+"px<br>";
+    </script>
+
+    <p id="p2"></p>
+    <script>
+     document.getElementById('p2').innerHTML="Screen width is:"+screen.width;
+    </script>
+
+<p id="p3"></p>
+<script>
+document.getElementById('p3').innerHTML="Screen height is:"+screen.height;
+</script>
+
+<button onclick="funk1()">Provo</button>
+
+<script>
+    function funk1(){
+        window.open("https://www.google.com");
+    }
+</script>
+
+<button onclick="open1()">Open</button>
+<button onclick="close1()">Close</button>
+
+<script>
+    var x;
+
+    function open1(){
+        x=window.open("https://www.google.com/","_blank","width=800px, height=500px");
+    }
+    function close1(){
+        x.close();
+    }
+</script>
+
+<button onclick="funxhi()">Kliko</button>
+
+<p id="p4"></p>
+<script>
+    var txt;
+    function funxhi(){
+        if(confirm("Press a button!")){
+            txt='You have pressed Ok';
+        }
+        else{
+            txt='You have pressed Cancel';
+        }
+        document.getElementById('p4').innerHTML=txt;
+    }
+</script>
+
+
+</body>
+</html>

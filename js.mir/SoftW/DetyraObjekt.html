@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var x = prompt("Moshen ju lutem:");
+
+         function objekt(y,w,x){
+            this.emri = y;
+            this.mbiemri = w;
+            this.mosha = x;
+         }
+
+         var z = new objekt("Filan","Festeki",x);
+
+         if(z.mosha>18){
+            document.write("Bon me votu");
+         }
+         else{
+            document.write("Nuk bon me votu");
+         }
+    </script>
+    <br>
+    <br>
+    <script>
+        var x = prompt("Moshen ju lutem:");
+
+        function DayAge(a){
+            return a*365;;
+        }
+        document.write(DayAge(x));
+   </script>
+   <br>
+   <br>
+   <script>
+    var x = prompt("Numer:");
+    
+    function fora(){
+        for(q=1;q<11;q++){
+             document.write("Shumezimi i numrit "+x+" me "+q+" eshte "+x*q+"<br>");
+
+        };
+        }
+        document.write(fora());
+   </script>
+   <br>
+   <br>
+   <script>
+      var x = pompt("Numr:");
+
+      function ajo(){};

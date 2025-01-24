@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">Prizren</p>
+    <button onclick="ndroje()">Click</button>
+    <script>
+        function ndroje(){
+            document.getElementById('p1').innerHTML="Prishtina";
+        }
+    </script>
+    <button onclick="text1(this)">Click2</button>
+    <p onclick="text1(this)">Prizren</p>
+    <script>
+        function text1(para){
+            para.innerHTML="Prishtine";
+        }
+    </script>
+</body>
+</html>

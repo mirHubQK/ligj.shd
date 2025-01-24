@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//shift+1+enter=starter pack
+        var x = "Shkolla digjital Prizren";
+        document.write(x+"<br>");
+        var y = "Shkolla digjital' 'Prizren' ";
+        document.write(y+"<br>");
+    </script>
+    <script>
+        var emri = "Emir";
+        document.write(emri.length+"<br>");
+
+        var mbiemri = "Emir Spahija";
+        var pozicion = mbiemri.indexOf("Spahija");
+
+        document.write(pozicion+"<br>");
+
+        var a = "Emir Spahija and Spahiu";
+        var b = a.indexOf("Spahiu");
+
+        document.write(b+"<br>");
+    </script>
+     <script>
+        // search() method
+        var a = "Arianit Tershnjaku plave";
+        var b = a.search("Tershnjaku"); //
+        document.write(b + "<br>"); // fillon numrimin nga 0
+  
+        // charAt() method
+        var e = "Arianit Tershnjaku plave";
+        var f = e.charAt(3); //Kjo metod na mundeson kekrimin e nje karakteri
+        //Nese nuk i caktojme parameter, ateher e merr karakterin e pare
+        document.write(f + "<br>"); // fillon numrimin nga 0
+  
+        // charCodeAt() method
+        var g = "Arianit Tershnjaku plave";
+        var h = g.charCodeAt(3); //Kjo metod na mundeson kerkimin e nje karakteri
+        document.write(h + "<br>"); // fillon numrimin nga 0
+  
+        // concat() method
+        var g = "Arianit Tershnjaku";
+        var g1 = " Plave";
+        var h = g.concat(g1); //Kjo metod na mundeson bashkimin e stringeve
+        document.write(h + "<br>"); // fillon numrimin nga 0
+      </script>
+      <br /><br />
+      <script>
+        var a = "Arianit Tershnjaku plave";
+        var b = a.slice(3,9);
+        document.write(b+"<br>");
+        var c = "Arianit Tershnjaku plave";
+        var v = c.slice(-10,-4);
+        document.write(v+"<br>");
+        var f = "Arianit Tershnjaku plave";
+        var d = f.slice(10);
+        document.write(d+"<br>");
+      </script>
+      <script>
+        // substring() metoda eshte e ngjashme me metoden slice()
+        //mirpo ketu nuk mund te i caktojme vlera negative
+        var a = "Arianit Tershnjaku plave";
+        var b = a.substring(10, 13); //nese nuk e shenojme parametrin e dyte atehere e merr krejt stingun deri ne fund.
+        document.write(b + "<br>");
+      </script>
+      <script>
+        // substr() metoda eshte perafersidht e ngjashme me metoden slice()
+        //mirpo ketu dallon diqka, parametri i dyte e cakton length e vleres qe na jep ne rezultat
+        var a = "Arianit Tershnjaku plave";
+        var b = a.substr(10, 5); //nese nuk e shenojme parametrin e dyte atehere e merr krejt stingun deri ne fund.
+        // gjithashtu me parameter negativ fillon nga fundi.
+        document.write(b + "<br>");
+      </script>
+      <script>
+        var a = "Arianit Tershnjaku plave";
+        var b = a.substr(-10, 5); // gjithashtu me parameter negativ fillon nga fundi.
+        document.write(b + "<br>");
+      </script>
+  
+      <script>
+        //toLowerCase() method
+        var a = "Arianit Tershnjaku plave";
+        document.write(a.toLowerCase() + "<br>");
+  
+        // toUpperCase() method
+        var b = "Arianit Tershnjaku plave";
+        document.write(b.toUpperCase());
+      </script>
+    
+      <button onclick="document.getElementById('p1').innerHTML = txt;">
+        kliko
+      </button>
+
+      <button onclick="document.getElementById('p1').innerHTML = txt1;">
+        kliko2
+      </button>
+
+      <p id="p1">Arianit Tershnjaku Dragash</p>
+      <script>
+        var str = document.getElementById("p1").innerHTML;
+        var txt = str.replace("Dragash", "Prizren");
+        var txt1 = txt.replace("Prizren", "Dragash");
+
+      </script>
+   
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

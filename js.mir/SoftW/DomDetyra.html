@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h">SHKOLLA DIGJITALE</h1>
+    <button onclick="ngjyra()">Red</button>
+    <button onclick="ngjyra2()">Black</button>
+    <br>
+    <br>
+    <button onclick="bg()">Back1</button>
+    <button onclick="bg2()">Back2</button>
+    <button onclick="bg3()">Back3</button>
+    <script>
+        function ngjyra(){
+            document.getElementById('h').style.color="red";
+        }
+        function ngjyra2(){
+            document.getElementById('h').style.color="black";
+        }
+    </script>
+    <script>
+        function bg(){
+            document.getElementsByTagName('body')[0].style.background="green";
+        }
+        function bg2(){
+            document.getElementsByTagName('body')[0].style.background="yellow";
+        }
+        function bg3(){
+            document.getElementsByTagName('body')[0].style.background="purple";
+        }
+    </script>
+    <br>
+    <br>
+    <button onclick="link()">Ndro link</button>
+    <a id="a1" href="https://www.Google.com">Google</a>
+    <script>
+    function link(){
+    document.getElementById('a1').href="https://www.youtube.com";
+    }
+    </script>
+    <br>
+    <br>
+
+   <button onclick="data()">Sot</button>
+   <p id="p1"></p>
+ 
+   <script>
+    function data(){
+        var x = new Date();
+         document.getElementById('p1').innerHTML=x;
+    }
+   </script>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="document.getElementById('p1').innerHTML = laptop;">Click here</button>
+
+    <p id="p1"></p>
+
+    <script>
+        var laptop = ['this','that','object','car','root'];
+        document.getElementById("p1").innerHTML = laptop;
+        document.write(laptop);
+        document.write("<br>");
+        laptop.sort();
+        document.write(laptop);
+
+    </script>
+    <br>
+    <br>
+    <button onclick="document.getElementById('p2').innerHTML = numrat1;">Sort Number</button>
+
+    <p id="p2"></p>
+    <script>
+    // Sort() Kjo metod na mundeson qe ti sortojme apo ti rendititm elementet, nga fillim ne fund
+        var numrat1 = [17,1,9,13,25,6,8];
+        document.getElementById("p2").innerHTML = numrat1;
+        
+        numrat1.sort(); //Nese jane stringje i rendit ne renditje alfabetike. ASCII CODE
+    </script>
+    
+    <button onclick="document.getElementById('p3').innerHTML = laptop1;">Reverse</button>
+
+    <p id="p3"></p>
+    <br>
+    <br>
+    <script>
+    // Reverse() Kjo metod na mundeson qe ti sortojme apo ti rendititm elementet, mirepo nga fundi ne fillim
+        var laptop1 = [3,4,1,6,4,6,8,9,1];
+        document.getElementById("p3").innerHTML = laptop1;
+           laptop1.sort(); 
+        //document.write(laptop1);
+        laptop1.reverse(); //Nese jane stringje i rendit ne renditje alfabetike.
+        //document.write(laptop1);
+    </script>
+    <br>
+
+
+    
+    <br>
+    <button onclick="sortim()">Sort Numeric</button>
+
+    <p id="p4"></p>
+
+    <script>
+        var numrat = [40, 100, 1, 5, 25, 10];
+        document.getElementById("p4").innerHTML = numrat;  
+
+        function sortim() 
+        {
+            numrat.sort(function(a, b){return a - b});
+            document.getElementById("p4").innerHTML = numrat;
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

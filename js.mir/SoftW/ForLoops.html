@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       for(x=2; x<7; x++){
+        document.write(x+"<br>")
+       }
+    </script>
+    <br>
+    <br>
+    <p id="p1"style='color:red'></p>
+    <script>
+        var para = '';
+
+        for(x=0; x<5; x++){
+
+        para += x +"<br>";
+
+         document.getElementById('p1').innerHTML=para;
+        }
+     </script>
+     <br>
+     <br>
+     <p id="p2"></p>
+     <script>
+        var vargu=['Shkolla','Digjitale','Prizren'];
+        var y = vargu.length;
+        var z = '';
+        var a = vargu.sort();
+        for(x=0; x<y; x++){
+
+            z+=vargu[x]+'<br>';
+
+        }
+        document.getElementById('p2').innerHTML=z;
+     </script>
+      <br>
+      <br>
+      <script>
+        var vargu = ['11 marsi', 'Gjon buzuku', 'Ymer Prizren', 'Luciano Motroni', 'Leke Dukagjini', 'Mustafa Bakiu'];
+        document.write(vargu + "<br>");
+        
+        // Sort the array
+        var a = vargu.sort();
+        
+        // Loop through the sorted array
+        for (var x = 0; x < a.length; x++) {
+            var z = a[x]; // Access sorted array
+            document.write("  " + z + " eshte " + (x + 1) + "<br>"); // Add 1 to x
+        }
+    </script>
+     <br>
+     <br>
+     <script>
+        var vargu = ['11 marsi', 'Gjon buzuku', 'Ymer Prizren', 'Luciano Motroni', 'Leke Dukagjini', 'Mustafa Bakiu'];
+        document.write(vargu + "<br>");
+        
+        // Sort and reverse the array
+        var a = vargu.sort().reverse();
+        
+        // Loop through the sorted and reversed array
+        for (var x = 0; x < a.length; x++) {
+            var z = a[x]; // Access sorted array
+            document.write("  " + z + " eshte " + (a.length - x) + "<br>"); // Count down from 6
+        }
+    </script>
+    
+</body>
+</html>
